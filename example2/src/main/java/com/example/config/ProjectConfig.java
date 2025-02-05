@@ -7,20 +7,24 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ProjectConfig {
     @Bean
-    Vehicle vehicle() {
+    Vehicle vehicle1() {
         var veh = new Vehicle();
-        veh.setName("Audi 8");
+        veh.setName("Audi");
         return veh;
     }
 
     @Bean
-    String hello() {
-        return "Hello World";
+    Vehicle vehicle2() {
+        var veh = new Vehicle();
+        veh.setName("Honda");
+        return veh;
     }
 
     @Bean
-    Integer number() {
-        return 16;
+    Vehicle vehicle3() {
+        var veh = new Vehicle();
+        veh.setName("Ferrari");
+        return veh;
     }
 }
 
