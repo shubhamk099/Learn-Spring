@@ -1,7 +1,5 @@
 package com.shubham.Main;
 
-import com.shubham.beans.Person;
-import com.shubham.beans.Vehicle;
 import com.shubham.config.ProjectConfig;
 import com.shubham.services.VehicleServices;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

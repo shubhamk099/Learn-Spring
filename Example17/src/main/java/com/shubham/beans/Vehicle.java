@@ -2,10 +2,8 @@ package com.shubham.beans;
 
 import com.shubham.services.VehicleServices;
 import jakarta.annotation.PostConstruct;
-import org.springframework.beans.factory.BeanDefinitionStoreException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component(value = "vehicleBean")
