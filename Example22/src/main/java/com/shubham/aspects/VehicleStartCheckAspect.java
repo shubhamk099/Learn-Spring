@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 @Aspect
 @Component
 public class VehicleStartCheckAspect {
-    private Logger logger = Logger.getLogger(VehicleStartCheckAspect.class.getName());
+    private final Logger logger = Logger.getLogger(VehicleStartCheckAspect.class.getName());
 
     @Before("execution(* com.shubham.services.*.*(..)) && args(vehicleStarted,..)")
     public void checkVehicleStarted(JoinPoint joinPoint, boolean vehicleStarted) throws Throwable {
